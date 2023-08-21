@@ -42,5 +42,3 @@ list["items"].push(adding_list_items())
 #puts list.inspect
 #puts print_items().inspect
 print_items(list)
-
-

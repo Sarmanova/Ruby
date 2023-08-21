@@ -36,9 +36,21 @@ contact_list = Array.new
 
 answer = ""
 while answer != "n"
-  contact_list.push(add_contact_list)
+  contact_list.push(add_contact_list())
   answer = ask_questions("Would you like to add another person? (y/n)")
-
+# if answer == "y"
+#  contact_list["name"].push(answer)
+ # contact_list["phone_number"].push()
 end
 
-
+puts "---"
+contact_list.each do |contact|
+  puts "Name: #{contact["name"]}"
+  if contact["phone_number"].size > 0 
+    contact["phone_number"].each do |phone_number|
+      puts "Phone_number: #{phone_number}"
+    end
+  
+end
+puts "------ \n"
+end
